@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onscroll 滚动效果演示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            height: 2000px; /* 模拟长内容，产生滚动条 */
+            padding: 20px;
+            background: linear-gradient(to bottom, #f0f8ff, #add8e6);
+        }
+        .onscroll {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 123, 255, 0.9);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: none; /* 初始状态为隐藏 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .onscroll p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 滚动提示 -->
+    <div class="onscroll" id="scrollHint">
+        <p>您已滚动超过 100 像素！</p>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+        <h1>欢迎来到 onscroll 滚动效果演示页面</h1>
+        <p>请向下滚动页面，观察顶部的提示效果。</p>
+        <p>此示例展示了如何通过 JavaScript 的 onscroll 事件实现动态效果。</p>
+        <p>页面中的内容是为了模拟滚动条而填充的。</p>
+        <p>...</p>
+        <p>继续滚动可以体验更多效果！</p>
+    </div>
+
+    <script>
+        // 滚动事件监听
+        window.onscroll = function() {
+            const scrollHint = document.getElementById("scrollHint");
+            if (window.scrollY > 100) {
+                scrollHint.style.display = "block"; // 显示提示
+            } else {
+                scrollHint.style.display = "none"; // 隐藏提示
+            }
+        };
+    </script>
+</body>
+</html>

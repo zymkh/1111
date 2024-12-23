@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页功能演示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .tabs, .accordion, .slider {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .tabs {
+            border: 1px solid #ccc;
+        }
+        .tab-buttons button {
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            background: #f0f0f0;
+            width: 33.3%;
+        }
+        .tab-buttons button.active {
+            background: #007BFF;
+            color: white;
+        }
+        .tab-content {
+            padding: 20px;
+            border-top: 1px solid #ccc;
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
+        .accordion .item {
+            border: 1px solid #ccc;
+            margin: 5px 0;
+        }
+        .accordion .item h3 {
+            margin: 0;
+            padding: 10px;
+            cursor: pointer;
+            background: #f0f0f0;
+        }
+        .accordion .item div {
+            display: none;
+            padding: 10px;
+        }
+
+        .slider {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 200px;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .onscroll {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 123, 255, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Tab -->
+<div class="tabs">
+    <div class="tab-buttons">
+        <button class="active" onclick="openTab(0)">选项卡 1</button>
+        <button onclick="openTab(1)">选项卡 2</button>
+        <button onclick="openTab(2)">选项卡 3</button>
+    </div>
+    <div class="tab-content active">这是选项卡 1 的内容。</div>
+    <div class="tab-content">这是选项卡 2 的内容。</div>
+    <div class="tab-content">这是选项卡 3 的内容。</div>
+</div>
+
+<!-- Accordion -->
+<div class="accordion">
+    <div class="item">
+        <h3 onclick="toggleAccordion(this)">手风琴 1</h3>
+        <div>手风琴 1 的内容。</div>
+    </div>
+    <div class="item">
+        <h3 onclick="toggleAccordion(this)">手风琴 2</h3>
+        <div>手风琴 2 的内容。</div>
+    </div>
+    <div class="item">
+        <h3 onclick="toggleAccordion(this)">手风琴 3</h3>
+        <div>手风琴 3 的内容。</div>
+    </div>
+</div>
+
+<!-- Slider -->
+<div class="slider">
+    <div class="slides">
+        <div class="slide" style="background: lightcoral;">幻灯片 1</div>
+        <div class="slide" style="background: lightblue;">幻灯片 2</div>
+        <div class="slide" style="background: lightgreen;">幻灯片 3</div>
+    </div>
+</div>
+
+<!-- OnScroll -->
+<div class="onscroll" id="onscroll">
+    您已向下滚动超过 100 像素！
+</div>
+
+<script>
+    // Tab
+    function openTab(index) {
+        document.querySelectorAll('.tab-buttons button').forEach((btn, i) => {
+            btn.classList.toggle('active', i === index);
+        });
+        document.querySelectorAll('.tab-content').forEach((tab, i) => {
+            tab.classList.toggle('active', i === index);
+        });
+    }
+
+    // Accordion
+    function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const isOpen = content.style.display === "block";
+        document.querySelectorAll('.accordion .item div').forEach(div => div.style.display = 'none');
+        content.style.display = isOpen ? 'none' : 'block';
+    }
+
+    // Slider
+    let currentSlide = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }, 3000);
+
+    // OnScroll
+    window.addEventListener('scroll', () => {
+        const onscrollDiv = document.getElementById('onscroll');
+        if (window.scrollY > 100) {
+            onscrollDiv.style.display = 'block';
+        } else {
+            onscrollDiv.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
