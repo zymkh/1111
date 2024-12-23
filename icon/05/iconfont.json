@@ -1,0 +1,107 @@
+{
+  "id": "4766927",
+  "name": "dazuoye-1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7676506",
+      "name": "earphone",
+      "font_class": "earphone",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "12325327",
+      "name": "passport",
+      "font_class": "passport",
+      "unicode": "e6d3",
+      "unicode_decimal": 59091
+    },
+    {
+      "icon_id": "14629155",
+      "name": "document-small",
+      "font_class": "document-small",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "28046189",
+      "name": "position",
+      "font_class": "position",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "6366979",
+      "name": "ticket-sel",
+      "font_class": "ticket-sel",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "15148643",
+      "name": "medal",
+      "font_class": "medal",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "29306562",
+      "name": "icon-crown",
+      "font_class": "icon-crown",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "2469384",
+      "name": "资金流通",
+      "font_class": "zijinliutong",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "6158243",
+      "name": "Out of the warehouse-出库-1",
+      "font_class": "chuku",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "10241503",
+      "name": "message",
+      "font_class": "message",
+      "unicode": "e787",
+      "unicode_decimal": 59271
+    },
+    {
+      "icon_id": "10970232",
+      "name": "Bell",
+      "font_class": "Bell",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "16619493",
+      "name": "wallet",
+      "font_class": "wallet",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "20375436",
+      "name": "gear设置",
+      "font_class": "gearshezhi",
+      "unicode": "e76a",
+      "unicode_decimal": 59242
+    },
+    {
+      "icon_id": "21096847",
+      "name": "truck",
+      "font_class": "truck",
+      "unicode": "ece2",
+      "unicode_decimal": 60642
+    }
+  ]
+}

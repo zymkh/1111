@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4766927 */
+  src: url('iconfont.woff2?t=1733121103376') format('woff2'),
+       url('iconfont.woff?t=1733121103376') format('woff'),
+       url('iconfont.ttf?t=1733121103376') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 30px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-earphone:before {
+  content: "\e6ed";
+}
+.icon-earphone{
+  font-size: 25px;
+}
+
+
+.icon-passport:before {
+  content: "\e6d3";
+}
+.icon-passport{
+  font-size: 25px;
+}
+.icon-document-small:before {
+  content: "\e60d";
+}
+
+.icon-document-small{
+  font-size: 20px;
+}
+
+.icon-position:before {
+  content: "\e6fa";
+}
+.icon-position{
+  font-size: 20px;
+}
+.icon-ticket-sel:before {
+  content: "\e680";
+}
+
+.icon-medal:before {
+  content: "\e649";
+}
+
+.icon-icon-crown:before {
+  content: "\e668";
+}
+
+.icon-zijinliutong:before {
+  content: "\e612";
+}
+
+.icon-chuku:before {
+  content: "\e60c";
+}
+
+.icon-message:before {
+  content: "\e787";
+}
+
+.icon-Bell:before {
+  content: "\e601";
+}
+
+.icon-Bell{
+  font-size: 25px;
+}
+
+.icon-wallet:before {
+  content: "\e6e0";
+}
+
+.icon-gearshezhi:before {
+  content: "\e76a";
+}
+.icon-gearshezhi {
+  font-size: 25px; /* 修改为你需要的大小 */
+}
+
+
+.icon-truck:before {
+  content: "\ece2";
+}
+
