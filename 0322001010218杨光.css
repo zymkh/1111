@@ -1,0 +1,456 @@
+.yangguangcontainer {
+    width: 100vw;
+    height: auto; /* 让容器根据内容自适应高度 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.pay {
+    width: 80px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 10px;
+    background-color: #232F3E;
+    color: white;
+    font-size: 12px;
+}
+
+.pay img {
+    width: 24px;
+    height: 15px;
+}
+.pay span{
+    color: #fff;
+}
+.header-first {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* 允许子项换行 */
+    
+}
+
+.header-first-left .car {
+    font-size: 16px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+.header-first {
+    box-sizing: border-box;
+}
+
+.header-first-left .dizhi {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header-first-right span {
+    font-weight: 800;
+    font-size: 16px;
+
+}
+
+.header-second {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+
+.center {
+
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.center-item {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin : 0 10px;
+}
+
+.center-item-left {
+    width: 60px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.rad {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF003E;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    border: 2px solid black; /* Add black border */
+}
+
+.rad.active {
+    background-color: #fff; /* 点击后的颜色，白色 */
+}
+.rad i {
+    color: white;
+}
+
+.center-item-mid {
+
+    height: 100%;
+
+}
+.center-item-mid img {
+    width: 150px;
+    height: 150px;
+}
+
+.center-item-right {
+    width: calc(100% - 60px - 150px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+.top {
+    width: 100%;
+
+}
+
+.top span {
+    position: relative;
+    top: 0;
+    left: 10px;
+    right: 80px;
+}
+
+.mid {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.mid-first {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.meiguo {
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.quan {
+    border: solid 1px rgb(248,224,208);
+    padding: 3px 3px;
+    font-size: 12px;
+    color: #EBA373;
+    box-sizing: border-box;
+}
+
+.mid-second {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+.add-car {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flag-dash {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #F6FAFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-plus {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #E2E6E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.xuanze-ok {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.xuanze-black {
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 5px;
+}
+
+.bot {
+    width: 100%;
+    height: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.again {
+    background-color: #F0F2F1;
+    padding: 8px 5px;
+    box-sizing: border-box;
+}
+
+.red-font {
+    font-size: 15px;
+    color: red;
+}
+
+
+
+
+.second-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    left : 10px;
+}
+
+.go-to-pay {
+    width: 80px;
+    height: 35px;
+    background-color: red;
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 160px;
+}
+
+.span-1 {
+font-size: 12px;
+font-weight: 500;
+}
+
+.span-2 {
+    font-size: 20px;
+    color: red;
+}
+.go-to-pay span{
+    color: #fff;
+}
+
+
+.bottom {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px; /* 给元素加点间距，防止紧贴边缘 */
+    box-sizing: border-box;
+    background-color: white; /* 如果需要背景色 */
+    position: relative; /* 使其保持在文档流中 */
+    z-index: 1000;
+
+    background-color: white;
+}
+
+.bottom-third {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-sizing: border-box; 
+    
+  }
+
+  .bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0; /* 在垂直方向添加间距 */
+  }
+  .bottom-item a,span,i {
+    text-decoration: none;  /* 删除超链接下划线 */
+    color: #000;         /* 保持文字颜色与周围元素一致 */
+}
+* {
+    text-decoration: none;
+}
+
+
+.bottom-second {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-left: 10px; 
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 新增的按钮样式 */
+.select-toggle-btn {
+    background-color: #0eafe0; /* 绿色背景 */
+    color: white;
+    border: none;
+    border-radius: 50%;  /* 圆形 */
+    
+    width: 50px;          /* 设置固定宽度 */
+    height: 50px;         /* 设置固定高度，确保圆形 */
+    
+    font-size: 20px;      /* 字体大小 */
+    padding: 0;           /* 去掉内边距，避免影响圆形效果 */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+    display: flex;
+    justify-content: center;  /* 使文字居中 */
+    align-items: center;      /* 使文字居中 */
+  }
+  
+  .select-toggle-btn:active {
+    background-color: #2bb7da; /* 悬停时的背景色 */
+    transform: scale(1.10); /* 微微放大 */
+}
+
+.select-toggle-btn:focus {
+
+    outline: none; /* 去除聚焦时的边框 */
+}
+
+/* 美化“全选”按钮的左边部分 */
+.second-left {
+    display: flex;
+    align-items: center;
+}
+
+.second-left .add {
+    margin-left: 10px; /* 让“全选”按钮和前面的按钮保持一定间隔 */
+}
+
+.second-left .add span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add {
+    cursor: pointer;
+}
+
+.add:hover {
+    text-decoration: underline;
+}
+
+/* 调整按钮的大小和间距 */
+.bottom-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.bottom-second .second-left {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-second .second-right {
+    display: flex;
+    align-items: center;
+}
+
+.go-to-pay {
+    background-color: #ff1500;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+

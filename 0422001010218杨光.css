@@ -1,0 +1,366 @@
+.yangguangcontainer{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+* {
+    text-decoration: none;
+}
+.header {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;  /* 保持在页面最顶端 */
+    background-color: #f5f5f5;  /* 适当的背景颜色，浅灰色 */
+    z-index: 1000;  /* 确保它位于页面的最上层 */
+    padding: 10px;  /* 根据需要调整内边距 */
+}
+
+
+
+.text1 {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* 增加字号 */
+    line-height: 1.5; /* 增加行高 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    font-family: "KaiTi", "楷体", serif;
+    font-weight: bold;  
+}
+
+.left_arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-size: 22px; /* 增加字号 */
+    line-height: 1.5; /* 增加行高 */
+    position: fixed;
+    top: 0;
+    left: 20px;
+    width: 100%;
+    z-index: 9999;
+    color: black;
+}
+
+.right_share {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 22px; /* 增加字号 */
+    line-height: 1.5; /* 增加行高 */
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: auto;
+    z-index: 9999;
+}
+
+
+
+.bowl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* 从左开始对齐 */
+    position: relative;
+    z-index: 9998;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.shopping_bag {
+    padding-left:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: inherit;
+    margin-right: 15px; /* 添加右边距，以分开购物袋和搜索框 */
+}
+
+.search {
+    border-radius: 60px;
+    flex: 1;
+    position: relative;
+    z-index: inherit;
+}
+
+
+
+.search-icon {
+    position: absolute;
+    top: 6px;
+    
+    left: 30px;
+}
+
+.search input {
+    margin-left: 12px;
+    height: 28px;
+    width: 90%;
+    border-radius:  20px;
+}
+
+.img .hou{
+    width: 100vw;
+    object-fit: contain;
+    margin-top: 50px;
+}
+
+.center {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top : 30px;
+    /* background-color: rgb(249, 248, 247); */
+}
+
+.mid_block {
+    display: flex; /* 使用 Flexbox 布局，使子元素横向排列 */
+    justify-content: space-between; /* 子元素间留有间距 */
+    align-items: center; /* 垂直方向居中对齐 */
+    width: 100%; /* 根据需要调整容器的宽度 */
+    padding: 10px; /* 为整个模块增加内边距 */
+    /* 可选的背景颜色 */
+}
+
+.mid_block_using {
+    width: 20%; /* 确保四个小模块的宽度加起来不超过100% */
+    padding: 10px; /* 每个小模块的内边距 */
+    background-color: #499DCB; /* 可选的背景颜色 */
+    text-align: center; /* 文字居中对齐 */
+    border-radius: 20px;
+    font-size : 20px;
+    font-weight: bold;
+    color:white;
+}
+.mid_block_using:hover {
+    background-color: blue;  /* 你可以调整为你需要的蓝色 */
+    color: white;  /* 悬浮时文字颜色变为白色，以便更好地对比 */
+}
+.mid_block_unuse{
+    width: 20%; /* 确保四个小模块的宽度加起来不超过100% */
+    padding: 10px; /* 每个小模块的内边距 */
+    
+    text-align: center; /* 文字居中对齐 */
+    border-radius: 20px;
+    /* background-color: rgb(249, 248, 247); */
+    font-size : 20px;
+    font-weight: bold;
+}
+
+
+
+
+.line-first {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rgb(249, 248, 247); */
+    margin-top: 10px;
+    
+}
+
+.line-second {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+    
+}
+
+.item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% ;
+}
+
+
+.item item_test{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.img .hou2{
+    width: 100vw;
+    object-fit: contain;
+    margin-top: 30px;
+}
+
+.bottom {
+    display: flex; /* 设置为弹性布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐（如果高度不够可省略） */
+    position: relative; /* 可选：如果你想要在这个容器内使用绝对定位 */
+    width: 100%; /* 根据需要设置宽度 */
+    margin-top: 100px; /* 可以根据需要调整上边距 */
+}
+
+.bottom_background {
+    display: flex; /* 使用弹性布局，确保内部图片并排显示 */
+    background-color: #F7F9F8;
+    padding: 10px; /* 为背景添加内边距 */
+    justify-content: space-between; /* 确保图片分布在两边 */
+    gap: 50px;
+}
+
+.bottom_img {
+    width: 48%; /* 设置宽度使图片占据大约一半的空间 */
+    margin: 0; /* 去除额外的左右外边距 */
+}
+
+
+
+.last {
+    max-width: 100%; /* 确保图片不会超出父容器的宽度 */
+    height: auto; /* 保持图片纵横比 */
+    display: block; /* 使图片作为块级元素显示 */
+}
+
+.last_word {
+    display: flex; 
+
+}
+
+.measure {
+    color: white;
+    background-color: red;
+    font : 10px;
+    font-family: 'KaiTi', SimKai, serif; /* 设置字体为楷体，使用字体系列以防缺失 */
+}
+
+.last_price {
+
+    font-family: 'KaiTi', SimKai, serif; /* 设置字体为楷体，使用字体系列以防缺失 */
+    font-weight: bold; /* 设置为加粗 */
+}
+
+.last_time{
+    margin-left: auto;
+}
+
+
+.mid_down {
+    font-family: "KaiTi", "楷体", serif; /* 设置楷体字体 */
+    font-weight: bold; /* 加粗字体 */
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 20px; /* 向下移动20px，可根据需要调整数值 */
+}
+
+/* 模态框背景 */
+.modal {
+    display: none; /* 默认不显示 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* 确保它在页面的最上层 */
+}
+
+/* 模态框内容 */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 300px; /* 最小宽度 */
+}
+
+/* 按钮样式 */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* 鼠标悬停按钮效果 */
+button:hover {
+    background-color: #0056b3;
+}
+.mlist1 {
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+
+.mlist3 {
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+.mlist2 {
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+.mlist4 {
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+
+
+
+
+
+
+
+
+
+

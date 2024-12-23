@@ -1,0 +1,156 @@
+.yangguangcontainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+* {
+    text-decoration: none;
+}
+
+.bottom {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+}
+
+
+.bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.bottom-item a,span,i {
+    text-decoration: none;  /* 删除超链接下划线 */
+    color: #000;         /* 保持文字颜色与周围元素一致 */
+}
+
+.header span {
+    font-size: 24px;
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    background-color: #F1F3F2;
+
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.left-item {
+    height: 30px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    width: calc(100vw - 80px);
+    position: relative;
+}
+
+.right-header {
+    width: 100%;
+    height: 50px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.right-header span {
+    margin-right: 35px;
+}
+
+.xiala {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    z-index: 1000;
+}
+
+
+.right-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 靠左对齐，减少高度 */
+    justify-content: flex-start; /* 去除额外的空间 */
+    gap: 0;
+}
+
+
+.right-item > * {
+    flex-shrink: 1; /* 允许子元素收缩 */
+}
+
+
+
+.right-item-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 5px;
+}
+.y {
+    position: absolute;
+    right: 10px;
+}
+
+.right-item-body {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.line-first {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.line-item {
+    height: 60px; /* 减小整体高度 */
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line-item > * {
+    margin: 0; /* 减小子元素的外边距 */
+    padding: 0; /* 减小子元素的内边距 */
+}
+
+.my-image img {
+    width: 50px;
+    height: 50px;
+}

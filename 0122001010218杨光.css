@@ -1,0 +1,170 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+* {
+    text-decoration: none;
+}
+
+.yangguangheader {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed; /* 固定在页面顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* 平滑显示/隐藏效果 */
+}
+
+.header.hidden {
+    transform: translateY(-100%); /* 向上隐藏 */
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.text2 {
+    font-size: 30px;
+    color: #1AAEE2;
+    white-space: nowrap;
+}
+
+.search {
+    border-radius: 10px; 
+    flex: 1;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 2px;
+    left: 20px;
+}
+
+.search input {
+    margin-left: 12px;
+    padding-left: 28px; 
+    width: 90%;
+    border-radius:  8px;
+    color: #B2B6B7;
+}
+
+.img .hou {
+    width: 100vw;
+    object-fit: contain;
+}
+
+.center {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-first {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.line-second {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.item img {
+    width: 40px;
+    height: 40px;
+}
+
+.img .hou2 {
+    width: 100vw;
+    object-fit: contain;
+    margin-top: 30px;
+}
+
+/* .bottom {
+    height: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+} */
+
+.bottom {
+    height: 40px; /* 设置元素的高度为40像素 */
+    width: 100%; /* 设置元素的宽度为100%（占据父容器的全部宽度） */
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: center; /* 在垂直方向上对齐子元素到容器的中心 */
+    justify-content: space-between; /* 在水平方向上，将子元素均匀分布，首尾元素靠近容器的两端 */
+    padding: 0 15px; /* 设置左右内边距为15像素，上下内边距为0 */
+    box-sizing: border-box; /* 包括边框和内边距在内计算元素的总宽高 */
+    text-decoration: none; /* 去掉文本的下划线等装饰 */
+    
+}
+
+
+.bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin: 10px 0; 
+}
+
+.bottom-item a,span,i {
+    text-decoration: none;  /* 删除超链接下划线 */
+    color: #000;         /* 保持文字颜色与周围元素一致 */
+}
+
+
+
+
+
+
+
